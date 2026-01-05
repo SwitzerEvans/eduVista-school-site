@@ -49,6 +49,12 @@ h5 {
     position: fixed;
     background-color: white;
     z-index: 3000;
+    display: grid;
+    place-items: center;
+}
+
+#loader img{
+    width: 60px;
 }
 
 .fixed-btn {
