@@ -1,0 +1,1 @@
+let loader = document.getElementById('loader');

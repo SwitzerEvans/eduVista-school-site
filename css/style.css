@@ -1,0 +1,68 @@
+* {
+    font-family: Rubik;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --logo-font: 'Montserrat', sans-serif;
+    --button-background: orange;
+    --filter-black-logo: brightness(100) invert(1);
+    --light-border-line: rgb(76, 76, 76);
+    --border-line: rgb(204, 204, 204);
+    --container-max-width: 700px;
+    --header-background: #16293b;
+    --link-color: orange;
+}
+
+/* 
+smooth behaviour when the 
+fixed button in the footer is clicked 
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+#loader{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 3000;
+}
+
+.fixed-btn {
+    padding: 10px 14px;
+    background-color: var(--button-background);
+    border-radius: 3px;
+    position: fixed;
+    z-index: 25000;
+    right: 20px;
+    bottom: 10px;
+    transform: translateY(60px);
+    transition: transform 1s ease;
+}
+
+.fixed-btn-active{
+    transform: translateY(-20px);
+}
