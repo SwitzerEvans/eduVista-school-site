@@ -1,5 +1,7 @@
 .rev-slide {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url('../assets/images/banner/banner3.jpg');
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),
+        url("../assets/images/banner/banner1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -223,7 +225,7 @@
     transition: transform 0.5s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-.course-image a:hover{
+.course-image a:hover {
     background-color: purple;
     color: white;
 }
