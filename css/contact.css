@@ -1,0 +1,259 @@
+.page-banner {
+    display: grid;
+    place-items: center;
+    height: 200px;
+    background-image:
+        linear-gradient(rgba(75, 0, 130, .7), rgba(75, 0, 130, .7)),
+        url("../assets/images/banner/banner2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-banner h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: white;
+    font-weight: 900;
+}
+
+.breadcrumb-row {
+    display: grid;
+    place-items: center;
+    border-bottom: 1px solid var(--border-line);
+}
+
+.breadcrumb-container {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.breadcrumb-container a,
+.breadcrumb-container span {
+    font-size: 1.1rem;
+}
+
+.breadcrumb-container a {
+    color: #0a58ca;
+}
+
+.contact-info_section {
+    display: grid;
+    place-items: center;
+    padding: 3rem 0;
+}
+
+.contact-info_container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.info-container {
+    padding: 2rem 1.5rem;
+    background-color: rgb(57, 0, 84);
+}
+
+.info-container h2 {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 900;
+}
+
+.info-container > p {
+    color: white;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+.info-child_container {
+    padding: 0.7rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-line);
+    border-bottom: 1px solid var(--border-line);
+}
+
+.info-child_container .child {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.info-child_container .child div img {
+    width: 20px;
+}
+
+.info-child_container .child p {
+    line-height: 1.3rem;
+    color: white;
+}
+
+.contact-social h3 {
+    font-size: 1.1rem;
+    color: white;
+    margin-top: 1rem;
+}
+
+.social-child {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.social-child .child {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--border-line);
+    transition: background-color 0.3s ease, border 0.2s ease;
+    cursor: pointer;
+}
+
+.social-child .child:hover{
+    background-color: orange;
+    border: 1px solid orange;
+}
+
+.social-child .child img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-child .child:hover img{
+    filter: invert(1);
+}
+
+.social-child .child:hover .black-icon{
+    filter: invert(0);
+}
+
+.contact-form_container .form-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#form-icon {
+    background-color: orange;
+    height: 40px;
+    width: 5px;
+}
+
+.contact-form_container .form-header h2 {
+    font-size: 1.5rem;
+}
+
+.contact-form_container p {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact-form_container form {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    row-gap: 1.5rem;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid var(--border-line);
+}
+
+.input-group input:focus {
+    outline: none;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    transform: translateY(-50%);
+    color: rgb(69, 68, 68);
+    transition: top 0.5s ease, font-size 0.5s ease, color 0.5s ease;
+}
+
+.input-group input:focus+label,
+.input-group input:valid+label {
+    top: -1px;
+    font-size: 12px;
+    color: black;
+}
+
+.input-group textarea {
+    width: 100%;
+    padding-top: 10px;
+    border: none;
+    border-bottom: 1px solid var(--border-line);
+    height: 120px;
+}
+
+.input-group textarea:focus {
+    outline: none;
+}
+
+.input-group textarea:focus+label,
+.input-group textarea:valid+label {
+    top: -1px;
+    font-size: 12px;
+    color: black;
+}
+
+form button {
+    padding: 12px 14px;
+    background-color: var(--button-background);
+    border: none;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: purple;
+    color: white;
+}
+
+
+@media screen and (min-width:768px) {
+    .contact-info_container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .info-container {
+        width: 40%;
+    }
+
+
+}
+
+@media screen and (min-width:992px) {
+    .contact-form_container form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form .input-group:nth-child(5){
+        grid-column: 1/ span 2;
+    }
+
+    .info-container {
+        width: 30%;
+    }
+
+
+}
