@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVista - Faq</title>
+    <link rel="icon" href="./assets/icons/favicon.png">
+    <!-- site stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- page stylesheet -->
+    <link rel="stylesheet" href="./css/faq.css">
+    <!-- header stylesheet -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- mobile nav container stylesheet -->
+    <link rel="stylesheet" href="./css/mobile-navigation.css">
+    <!-- search container stylesheet -->
+    <link rel="stylesheet" href="./css/search-section.css">
+    <!-- footer stylesheet -->
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <img src="./assets/images/loading.gif" alt="">
+    </div>
+
+    <div class="search-grid">
+        <div class="search-contents">
+            <div class="close-search">
+                <div class="search-hamburger js-close-search">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="search-section">
+                <input type="text" placeholder="Type to search">
+                <div><img src="./assets/icons/search.png" alt=""></div>
+            </div>
+            <div>
+                <!-- empty div -->
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-nav js-mobile-nav">
+        <div class="mobile-nav-container">
+
+            <a href="./index.html" class="mobile-nav-header">
+                <img src="./assets/icons/favicon.png" alt="">
+                <h1>EduVista</h1>
+            </a>
+
+
+
+            <div class="mobile-nav-bottom">
+
+                <div class="category">
+                    <div class="cat-header">
+                        <a href="./index.html">HOME</a>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="cat-header">
+                        <span>PAGES</span>
+                        <!-- <span class="arrow-image"><img src="./assets/icons/icons8-down-button-100.png" alt=""></span> -->
+                    </div>
+                    <div class="cat-body">
+                        <ul>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="#">Event</a></li>
+                            <li><a href="./faq.html">FAQ's</a></li>
+                            <li><a href="./contact.html">Contact US</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Membership</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="cat-header">
+                        <span>OUR COURSES</span>
+                        <!-- <span class="arrow-image"><img src="./assets/icons/icons8-down-button-100.png" alt=""></span> -->
+                    </div>
+                    <div class="cat-body">
+
+                        <h2>Our Courses</h2>
+                        <div class="underline"></div>
+                        <ul>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Course Details</a></li>
+                            <li><a href="#">Instructor Profile</a></li>
+                            <li><a href="#">Upcoming Events</a></li>
+                            <li><a href="#">Membership</a></li>
+                        </ul>
+
+                        <div class="course-nav-image">
+                            <img src="./assets/images/adv/adv.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="cat-header">
+                        <a href="#"><span>BLOG</span></a>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="cat-header">
+                        <span>DASHBOARD</span>
+                        <!-- <span class="arrow-image"><img src="./assets/icons/icons8-down-button-100.png" alt=""></span> -->
+                    </div>
+                    <div class="cat-body">
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Add Listing</a></li>
+                            <li><a href="#">Bookmark</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Teacher Profile</a></li>
+                            <li><a href="#">User Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="nav-footer">
+                <a href="#">
+                    <img src="./assets/icons/icons8-facebook-f-100.png" alt="">
+                </a>
+                <a href="#">
+                    <img class="black-icon" src="./assets/icons/google-plus_152824.png" alt="">
+                </a>
+                <a href="#">
+                    <img class="black-icon" src="./assets/icons/linkedin (1).png" alt="">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- header -->
+
+    <header class="top-header" id="header">
+        <!-- header top left -->
+        <div class="top-left">
+            <div>
+                <img src="./assets/icons/question_471664.png" alt="">
+                <span>Ask a question</span>
+            </div>
+            <div>
+                <img src="./assets/icons/email.png" alt="">
+                <span>support@website.com</span>
+            </div>
+        </div>
+
+        <!-- header top right -->
+        <div class="top-right">
+            <div class="lang-dropdown">
+                <button class="lang-btn" id="langBtn">
+                    <img src="./assets/images/flag/united-states-of-america.svg" alt="US">
+                    <span>English US</span>
+                    <span class="arrow">▾</span>
+                </button>
+
+                <ul class="lang-menu" id="langMenu">
+                    <li data-lang="us">
+                        <img src="assets/images/flag/united-states-of-america.svg" alt="US">
+                        English US
+                    </li>
+                    <li data-lang="uk">
+                        <img src="assets/images/flag/united-kingdom.svg" alt="UK">
+                        English UK
+                    </li>
+                </ul>
+            </div>
+
+            <a class="header-login-Btn" href="#">Login</a>
+            <a class="header-reg-Btn" href="#">Register</a>
+        </div>
+    </header>
+
+    <nav class="nav-header js-sticky-nav">
+
+        <!-- site name and desktop navigation links -->
+
+        <div id="nav-left">
+            <a href="./index.html" class="nav-item" id="site-name">
+                <img src="./assets/icons/favicon.png" alt="">
+                <h1>EduVista</h1>
+            </a>
+
+            <div class="page-nav">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+
+                    <li class="nav-dropdown">
+                        <span>PAGES ▾</span>
+
+                        <ul id="dropdown-menu">
+                            <li><a href="./about.html">About</a></li>
+                            <li class="has-submenu">
+                                <a href="#">Event <span class="arrow">›</span></a>
+                                <ul id="sub-menu">
+                                    <li><a href="#">Event</a></li>
+                                    <li><a href="#">Event details</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="./faq.html">FAQ's</a></li>
+                            <li><a href="./about.html">Contact Us</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Membership</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-dropdown">
+                        <span>OUR COURSES ▾</span>
+
+                        <ul id="dropdown-menu">
+                            <li class="drop-content">
+                                <div class="course-left">
+                                    <h2>Our Courses</h2>
+                                    <div class="underline"></div>
+
+                                    <ul id="links">
+                                        <li><a href="#">Courses</a></li>
+                                        <li><a href="#">Course Details</a></li>
+                                        <li><a href="#">Instructor Profile</a></li>
+                                        <li><a href="#">Upcoming Events</a></li>
+                                        <li><a href="#">Membership</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="course-nav-image">
+                                    <img src="./assets/images/adv/adv.jpg" alt="">
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-dropdown">
+                        <span>BLOG ▾</span>
+
+                        <ul id="dropdown-menu">
+                            <li><a href="#">Blog Classic</a></li>
+                            <li><a href="#">Blog Classic Sidebar</a></li>
+                            <li><a href="#">Blog List Sidebar</a></li>
+                            <li><a href="#">Blog Standard Sidebar</a></li>
+                            <li><a href="#">Blog Details</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-dropdown">
+                        <span>DASHBOARD ▾</span>
+
+                        <ul id="dropdown-menu">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Add Listing</a></li>
+                            <li><a href="#">Bookmark</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Teacher Profile</a></li>
+                            <li><a href="#">User Profile</a></li>
+                            <li><a href="#">Calender</a></li>
+                            <li><a href="#">Mailbox</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="nav-icons">
+            <div class="nav-social nav-item">
+                <img class="white-icon" src="./assets/icons/icons8-facebook-f-100.png" alt="">
+                <img class="black-icon" src="./assets/icons/google-plus_152824.png" alt="">
+                <img class="black-icon" src="./assets/icons/linkedin (1).png" alt="">
+            </div>
+
+            <div class="nav-item nav-search">
+                <img src="./assets/icons/search.png" alt="">
+                <div class="hamburger js-hamburger">
+                    <span class="js-hamburger-span"></span>
+                    <span class="js-hamburger-span"></span>
+                    <span class="js-hamburger-span"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+
+    <section class="page-banner">
+        <h1>Frequently Asked Question </h1>
+    </section>
+
+    <section class="breadcrumb-row">
+        <div class="breadcrumb-container">
+            <a href="index.html">Home</a>
+            <span>&#10095;</span>
+            <span>Faqs</span>
+        </div>
+    </section>
+
+    <section class="faq-question_section">
+        <div class="faq-question_container">
+            <div class="question-header">
+                <div class="question-icon"></div>
+                <h1>Asked Questions</h1>
+            </div>
+
+            <div class="detail">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it.
+                </p>
+
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it.
+                </p>
+            </div>
+
+            <div class="question-panel">
+
+                <div class="question">
+                    <div class="child">
+                        <span>Why won't my payment go through?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <p>
+                        Web design aorem apsum dolor sit amet, adipiscing elit, sed diam nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+
+
+                <div class="question">
+                    <div class="child">
+                        <span>Why won't my payment go through?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <p>
+                        Web design aorem apsum dolor sit amet, adipiscing elit, sed diam nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+
+                <div class="question">
+                    <div class="child">
+                        <span>Why won't my payment go through?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <p>
+                        Web design aorem apsum dolor sit amet, adipiscing elit, sed diam nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+
+                <div class="question">
+                    <div class="child">
+                        <span>Why won't my payment go through?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <p>
+                        Web design aorem apsum dolor sit amet, adipiscing elit, sed diam nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+
+                <div class="question">
+                    <div class="child">
+                        <span>Why won't my payment go through?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <p>
+                        Web design aorem apsum dolor sit amet, adipiscing elit, sed diam nibh euismod tincidunt ut
+                        laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </div>
+
+
+            </div>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it.
+            </p>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it.
+            </p>
+        </div>
+
+    </section>
+
+
+    <section class="about-values_section">
+        <div class="about-values">
+
+            <div class="about-values_item">
+                <div class="item-image">
+                    <a href="#">
+                        <img src="./assets/icons/icon/icon1.png" alt="">
+                    </a>
+                </div>
+                <div class="item-text">
+                    <h3>Our Philosophy</h3>
+                    <p>Lorem ipsum dolor sit amit, consectetuer adipiscing elit, sed dier nonummy nibh euimod...</p>
+                </div>
+            </div>
+
+            <div class="about-values_item">
+                <div class="item-image">
+                    <a href="#">
+                        <img src="./assets/icons/icon/icon2.png" alt="">
+                    </a>
+                </div>
+                <div class="item-text">
+                    <h3>Kingster's Principle</h3>
+                    <p>Lorem ipsum dolor sit amit, consectetuer adipiscing elit, sed dier nonummy nibh euimod...</p>
+                </div>
+            </div>
+
+            <div class="about-values_item">
+                <div class="item-image">
+                    <a href="#">
+                        <img src="./assets/icons/icon/icon3.png" alt="">
+                    </a>
+                </div>
+                <div class="item-text">
+                    <h3>Key Of Success</h3>
+                    <p>Lorem ipsum dolor sit amit, consectetuer adipiscing elit, sed dier nonummy nibh euimod...</p>
+                </div>
+            </div>
+
+            <div class="about-values_item">
+                <div class="item-image">
+                    <a href="#">
+                        <img src="./assets/icons/icon/icon4.png" alt="">
+                    </a>
+                </div>
+                <div class="item-text">
+                    <h3>Our Philosophy</h3>
+                    <p>Lorem ipsum dolor sit amit, consectetuer adipiscing elit, sed dier nonummy nibh euimod...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer>
+        <section class="F-headers-section">
+            <div class="F-headers">
+                <div class="F-header grid-child">
+                    <div class="name-container">
+                        <img src="./assets/icons/favicon.png" alt="">
+                        <h2>EduVista</h2>
+                    </div>
+                </div>
+                <div class="F-header grid-child">
+                    <a href="#">
+                        <img src="./assets/icons/icons8-facebook-f-100.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="black-icon" src="./assets/icons/google-plus_152824.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="black-icon" src="./assets/icons/linkedin (1).png" alt="">
+                    </a>
+                </div>
+                <div class="F-header grid-child">
+                    <a href="#">
+                        Join Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="F-body">
+            <div class="F-grid">
+                <div class="F-grid-item subscribe-grid">
+                    <div class="subscribe-header">
+                        <h5>SIGN UP FOR A NEWSLETTER</h5>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="subscribe-body">
+                        <p>Weekly Breaking News Analysis And Cutting Edge Advices On Job Searching.</p>
+
+                        <div class="subscribe-container">
+                            <input type="email" placeholder="Your Email Address">
+                            <button>➡</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="F-grid-item footer-gadget">
+                    <div class="gadget-container">
+                        <div class="gadget-header">
+                            <h5>Company</h5>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="gadget-body">
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./faq.html">FAQs</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="gadget-container">
+                        <div class="gadget-header">
+                            <h5>Get In Touch</h5>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="gadget-body">
+                            <ul>
+                                <li><a href="#">Dashboard</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Event</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="gadget-container">
+                        <div class="gadget-header">
+                            <h5>Courses</h5>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="gadget-body">
+                            <ul>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Details</a></li>
+                                <li><a href="#">Membership</a></li>
+                                <li><a href="#">Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="F-grid-item footer-galley">
+                    <div class="gadget-header">
+                        <h5>Gallery</h5>
+                        <div class="underline"></div>
+                    </div>
+
+                    <div class="footer-galley-BTM">
+                        <div><img src="./assets/images/gallery/pic1.jpg" alt=""></div>
+                        <div><img src="./assets/images/gallery/pic2.jpg" alt=""></div>
+                        <div><img src="./assets/images/gallery/pic3.jpg" alt=""></div>
+                        <div><img src="./assets/images/gallery/pic4.jpg" alt=""></div>
+                        <div><img src="./assets/images/gallery/pic5.jpg" alt=""></div>
+                        <div><img src="./assets/images/gallery/pic6.jpg" alt=""></div>
+                        <div><img src="./assets/images/gallery/pic7.jpg" alt=""></div>
+                        <div><img src="./assets/images/gallery/pic8.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+    <a class="fixed-btn js-fixed-btn" href="#header">⬆</a>
+
+    <script src="./js/nav-toogle.js"></script>
+    <script src="./js/drop-downs.js"></script>
+    <script src="./js/nav-sticky.js"></script>
+    <script src="./js/faq-question-panel.js"></script>
+    <script src="./js/search-display.js"></script>
+    <script src="./js/to-top.js"></script>
+    <script src="./js/loader.js"></script>
+</body>
+
+</html>
