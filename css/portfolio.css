@@ -1,0 +1,192 @@
+.page-banner {
+    display: grid;
+    place-items: center;
+    height: 200px;
+    background-image:
+        linear-gradient(rgba(75, 0, 130, .7), rgba(75, 0, 130, .7)),
+        url("../assets/images/banner/banner2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-banner h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: white;
+    font-weight: 900;
+}
+
+.breadcrumb-row {
+    display: grid;
+    place-items: center;
+    border-bottom: 1px solid var(--border-line);
+}
+
+.breadcrumb-container {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.breadcrumb-container a,
+.breadcrumb-container span {
+    font-size: 1.1rem;
+}
+
+.breadcrumb-container a {
+    color: #0a58ca;
+}
+
+.portfolio_section {
+    display: grid;
+    place-items: center;
+    margin: 6rem 0;
+}
+
+.portfolio_container {
+    width: 90%;
+}
+
+.portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.portfolio-buttons button {
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-line);
+    cursor: pointer;
+}
+
+.portfolio-buttons button:active{
+    background-color: purple;
+}
+
+.portfolios {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+}
+
+.portfolios .portfolio {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    /* 
+
+    displayed this parent grid - 
+    to place the portfolio image center
+
+     */
+    display: grid;
+    place-items: center;
+}
+
+.portfolio .overlay-dims {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+}
+
+.overlay-dims .overlay-dim {
+    width: 50%;
+    height: 100%;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+        transition: transform 0.5s ease-in-out;
+}
+
+.overlay-dims .overlay-dim:first-child {
+    transform: translateX(-300px);
+}
+
+.overlay-dims .overlay-dim:last-child {
+    transform: translateX(300px);
+}
+
+.overlay-dims .overlay-dim.active{
+    transform: translateX(0);
+}
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio .name {
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    position: absolute;
+    bottom: -100px;
+    /*hide portfolio name*/
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    transition: bottom 0.55s ease;
+}
+
+.portfolio .name.active{
+    bottom: 0;
+}
+
+.portfolio .name span {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.portfolio .overlay-icon {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+}
+
+.portfolio .overlay-icon img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+}
+
+.overlay-icon img.active{
+    opacity: 1;
+}
+
+
+@media screen and (min-width:577px) {
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .portfolios {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width:992px) {
+    .portfolios {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .portfolio_container {
+        max-width: 1200px;
+    }
+}
