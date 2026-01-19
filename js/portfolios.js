@@ -32,11 +32,11 @@ portfolios.forEach((portfolio) => {
     }
 
     portfolio.addEventListener('mouseover', handleMouseover);
-    portfolio.addEventListener('touchstart', handleMouseover);
+    // portfolio.addEventListener('touchstart', handleMouseover);
 
 
     portfolio.addEventListener('mouseout', handleMouseOut);
-    portfolio.addEventListener('touchend', handleMouseOut);
+    // portfolio.addEventListener('touchend', handleMouseOut);
 
 
 });
