@@ -316,14 +316,14 @@
         <div class="portfolio_container">
 
             <div class="portfolio-buttons">
-                <button>All</button>
-                <button>Books</button>
-                <button>Courses</button>
-                <button>Education</button>
+                <button data-filter="all" class="active">ALL</button>
+                <button data-filter="books">BOOKS</button>
+                <button data-filter="courses">COURSES</button>
+                <button data-filter="education">EDUCATION</button>
             </div>
 
             <div class="portfolios">
-                <div class="portfolio">
+                <div class="portfolio" data-category="courses">
                     <div class="overlay-dims">
                         <div class="overlay-dim"></div>
                         <div class="overlay-dim"></div>
@@ -341,7 +341,7 @@
                 </div>
 
 
-                <div class="portfolio">
+                <div class="portfolio" data-category="education">
                     <div class="overlay-dims">
                         <div class="overlay-dim"></div>
                         <div class="overlay-dim"></div>
@@ -358,7 +358,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio">
+                <div class="portfolio" data-category="books">
                     <div class="overlay-dims">
                         <div class="overlay-dim"></div>
                         <div class="overlay-dim"></div>
@@ -375,7 +375,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio">
+                <div class="portfolio" data-category="books">
                     <div class="overlay-dims">
                         <div class="overlay-dim"></div>
                         <div class="overlay-dim"></div>
@@ -392,7 +392,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio">
+                <div class="portfolio" data-category="education">
                     <div class="overlay-dims">
                         <div class="overlay-dim"></div>
                         <div class="overlay-dim"></div>
@@ -409,7 +409,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio">
+                <div class="portfolio" data-category="courses">
                     <div class="overlay-dims">
                         <div class="overlay-dim"></div>
                         <div class="overlay-dim"></div>
@@ -425,7 +425,7 @@
                         <span>Soft skills</span>
                     </div>
                 </div>
-                <div class="portfolio">
+                <!-- <div class="portfolio">
                     <div class="overlay-dims">
                         <div class="overlay-dim"></div>
                         <div class="overlay-dim"></div>
@@ -526,12 +526,11 @@
                     <div class="name">
                         <span>Soft skills</span>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
     </section>
-
 
 
     <footer>
@@ -665,9 +664,10 @@
     <script src="./js/portfolios.js"></script>
     <script src="./js/search-display.js"></script>
     <script src="./js//portfolio-filter.js"></script>
-    <!-- <script src="./js/to-top.js"></script> -->
+    <script src="./js/to-top.js"></script>
     <script src="./js/loader.js"></script>
+
+
 </body>
 
 </html>
-
