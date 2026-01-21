@@ -58,7 +58,7 @@
 
 .portfolio-buttons button {
     background-color: white;
-    padding: 8px 10px;
+    padding: 10px 16px;
     border-radius: 5px;
     border: 1px solid var(--border-line);
     cursor: pointer;
