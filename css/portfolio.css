@@ -42,7 +42,7 @@
 .portfolio_section {
     display: grid;
     place-items: center;
-    margin: 6rem 0;
+    margin-top: 3rem;
 }
 
 .portfolio_container {
@@ -64,8 +64,9 @@
     cursor: pointer;
 }
 
-.portfolio-buttons button:active{
+.portfolio-buttons button.active {
     background-color: purple;
+    color: white;
 }
 
 .portfolios {
@@ -79,14 +80,26 @@
     height: auto;
     position: relative;
     overflow: hidden;
+
+
     /* 
 
     displayed this parent grid - 
     to place the portfolio image center
 
      */
+
+
     display: grid;
     place-items: center;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.portfolios .portfolio.hide{
+    opacity: 0;
+    transform: scale(0.95);
 }
 
 .portfolio .overlay-dims {
@@ -101,7 +114,7 @@
     height: 100%;
     background:
         linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-        transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .overlay-dims .overlay-dim:first-child {
@@ -112,7 +125,7 @@
     transform: translateX(300px);
 }
 
-.overlay-dims .overlay-dim.active{
+.overlay-dims .overlay-dim.active {
     transform: translateX(0);
 }
 
@@ -126,14 +139,19 @@
     background-color: orange;
     position: absolute;
     bottom: -100px;
+
+
     /*hide portfolio name*/
+
+
+
     display: flex;
     align-items: center;
     padding-left: 1rem;
     transition: bottom 0.55s ease;
 }
 
-.name.active{
+.name.active {
     bottom: 0;
 }
 
@@ -163,7 +181,7 @@
     cursor: pointer;
 }
 
-.overlay-icon img.active{
+.overlay-icon img.active {
     opacity: 1;
 }
 
