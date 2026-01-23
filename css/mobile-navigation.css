@@ -109,9 +109,14 @@
     align-items: center;
 }
 
+.cat-body ul li a{
+    background-color: red;
+    height: 100%;
+    width: 100%;
+}
+
 .arrow-image {
     transform: rotate(0deg);
-    /* background-color: green; */
     transition: transform 0.5s ease-in-out;
 }
 
@@ -120,7 +125,8 @@
 }
 
 .arrow-image img {
-    width: 30px;
+    width: 15px;
+    height: 15px;
 }
 
 .course-nav-image img {
