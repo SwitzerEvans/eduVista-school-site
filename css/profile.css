@@ -57,6 +57,7 @@
 .profile-information {
     height: max-content;
     border: 1px solid rgb(228, 228, 228);
+    min-width: 200px;
 }
 
 .profile-information .top {
@@ -130,6 +131,15 @@
 
 .bottom .menu.active {
     background-color: orange;
+    transition: background-color 0.3s ease;
+}
+
+.bottom .menu.active:hover {
+    background-color: purple;
+}
+
+.bottom .menu.active:hover span {
+    color: white;
 }
 
 .bottom .menu img {
@@ -144,7 +154,7 @@
     border: 1px solid rgb(228, 228, 228);
 }
 
-.menu-active.hide{
+.menu-active.hide {
     display: none;
 }
 
@@ -337,7 +347,7 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    border-bottom:1px solid rgb(228, 228, 228);
+    border-bottom: 1px solid rgb(228, 228, 228);
 }
 
 .result .label {
@@ -351,6 +361,145 @@
     width: 20px;
 }
 
+.edit-profile {
+    width: 100%;
+}
+
+.edit-profile .edit-profile-header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 0 5%;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.edit-profile-header h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.edit-profile-body form {
+    padding: 0 5%;
+}
+
+.edit-profile-body form .form-group {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+}
+
+.edit-profile-body form .form-group div{
+    display: flex;
+    align-items: center;
+}
+
+.edit-profile-body form .form-group div:first-child{
+    max-width: 100px;
+}
+
+.form-group div h3 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+form .form-group label{
+    color: grey;
+}
+
+.form-group input {
+    height: 35px;
+    width: 100%;
+    max-width: 400px;
+    padding: 0 10px;
+    border: 1px solid rgb(228, 228, 228);
+    color: gray;
+}
+
+.form-group input:focus-within {
+    outline: none;
+}
+
+form .seperator{
+    height: 10px;
+}
+
+.form-group #button-group{
+    max-width: max-content;
+    gap: 0.5rem;
+}
+
+#button-group button{
+    padding: 10px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#button-group .save-btn {
+    background-color: orange;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+#button-group .save-btn:hover{
+    background-color: purple;
+    color: white;
+}
+
+#button-group .cancel-btn{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#button-group .cancel-btn:hover{
+    background-color: rgb(60, 60, 60);
+}
+
+/*profile change password stuffs*/
+
+.change-password {
+    width: 100%;
+}
+
+.change-password .change-password-header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 0 5%;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.change-password-header h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.change-password-body form {
+    padding: 0 5%;
+}
+
+.change-password-body form .form-group {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+}
+
+.change-password-body form .form-group div{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width:767px) {
+    .profile-container {
+        max-width: 500px;
+    }
+}
+
 
 @media screen and (min-width:768px) {
     .page-banner {
@@ -359,10 +508,13 @@
 
     .profile-container {
         flex-direction: row;
+        position: relative;
     }
 
     .profile-information {
         width: 250px;
+        position: sticky;
+        top: 100px;
     }
 
     .profile-container .menu-body {
@@ -371,6 +523,25 @@
 
     .quiz-result .results {
         flex-direction: row;
+    }
+
+    .edit-profile-body form .form-group {
+        grid-template-columns: repeat(1, 1fr 3fr);
+        gap: 0.5rem;
+    }
+
+    form .company-name #note-info {
+        grid-column: 2/3;
+        max-width: 400px;
+    }
+
+    form .company-name #note-info span{
+        color: gray;
+    }
+
+    .change-password-body form .form-group {
+        grid-template-columns: repeat(1, 1fr 3fr);
+        gap: 0.5rem;
     }
 }
 
