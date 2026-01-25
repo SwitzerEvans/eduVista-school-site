@@ -366,6 +366,14 @@ header {
         display: block;
         padding: 12px 0;
         font-weight: 500;
+        background-color: white;
+        padding-left: 5%;
+        border-bottom:1px solid var(--border-line);
+        transition: background-color 0.3s ease;
+    }
+
+    #dropdown-menu li a:hover{
+        background-color: rgb(237, 237, 237);
     }
 
     .has-submenu .arrow {
@@ -378,7 +386,7 @@ header {
     #sub-menu {
         position: absolute;
         top: 0;
-        left: 105%;
+        left: 100%;
         width: 200px;
         background: #fff;
         border-radius: 6px;
