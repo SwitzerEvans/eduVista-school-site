@@ -68,7 +68,6 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-bottom: 1px dotted var(--border-line);
-    background-color: green;
 }
 
 .cat-header>a{
@@ -79,7 +78,6 @@
 .cat-header a,
 .cat-header span {
     font-weight: bold;
-    background-color: red;
     display: flex;
     align-items: center;
 }
